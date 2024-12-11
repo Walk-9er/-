@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Главная страница</title>
+    <title>Ваши будущие покупки</title>
     <style type="text/css">
         .header-container {
             display: flex;
@@ -108,29 +108,29 @@
             </div>
         </div>
     </nav>
-    <br>
-    <div class="card">
-        <div class="card-title">Привет, ценитель</div>
-        <div class="card-body">Готов окунуться в ностальгию?
+<br>
+<div class="container">
+        <div class="card-body">
+            <h2 class='card-title text-center'>Каталог</h2>
+            <input type="radio" id="title" name="sort" checked onchange="sort()"> Сортировать по названию </input>
+            <input type="radio" id="price" name="sort" onchange="sort()"> Сортировать по цене </input>
+            <input type="text" id="search" name="search" onchange="search()"> Поиск по каталогу </input>
+            <form action="https://www.google.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+                <input name="q" type="hidden" value="search">
+                <ul class="d-flex flex-row justify-content-around flex-wrap bg-light" id="node_for_insert">
+                </ul>
+                <input class="button" type="Submit" value="В корзину">
+            </form>
         </div>
-    </div>
-    <br>
+</div>
+<div class="button" style="text-align: right">
+    <a href="#top"> <img src="arrow.jpg" width="5%"></a>
 </div>
 <br>
-<br>
-<div class="button-container" style="text-align: center">
-    <a href="customs.html" target="_blank">
-        <button style="font-size: 20px">приобрести статус</button>
-    </a>
-</div>
-<br>
-<br>
-<br>
-<br>
-<br>
-    <footer class="footer">
-        <h3>chaotic electronicss</h3>
-    </footer>
+<footer class="footer">
+    <h3>chaotic electronicss</h3>
+</footer>
 </body>
-
+</body>
+<script src="list.js"></script>
 </html>
